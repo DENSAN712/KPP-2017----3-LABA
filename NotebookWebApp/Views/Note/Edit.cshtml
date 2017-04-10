@@ -1,10 +1,10 @@
 ﻿@model NotebookWebApp.Models.Notebook
 
 @{
-    ViewBag.Title = "Edit";
+    ViewBag.Title = "Редактирование";
 }
 
-<h2>Edit</h2>
+<h2>Редактирование</h2>
 
 @using (Html.BeginForm()) {
     @Html.ValidationSummary(true)
@@ -87,13 +87,13 @@
         </div>
 
         <p>
-            <input type="submit" value="Save" />
+            <input type="submit" value="Сохранить" />
         </p>
     </fieldset>
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Вернуться", "Index")
 </div>
 
 @section Scripts {

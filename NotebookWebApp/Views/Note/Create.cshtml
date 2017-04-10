@@ -1,10 +1,10 @@
 ﻿@model NotebookWebApp.Models.Notebook
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Добавление";
 }
 
-<h2>Create</h2>
+<h2>Создание</h2>
 
 <form id="form1" method="post" action="Create" enctype="application/x-www-form-urlencoded">
     <fieldset>
@@ -83,12 +83,12 @@
         </div>
 
         <p>
-            <input type="submit" value="Create"/>
+            <input type="submit" value="Создать"/>
         </p>
     </fieldset>
 </form>
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Вернуться", "Index")
 </div>
 
