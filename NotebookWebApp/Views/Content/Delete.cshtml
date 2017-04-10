@@ -1,0 +1,38 @@
+﻿@model NotebookWebApp.Models.Notebook
+
+@{
+    ViewBag.Title = "Ноутбук";
+}
+
+<h2>Удаление</h2>
+<hr />
+<h3>Вы действительно хотите удалить этот ноутбук?</h3>
+<fieldset>
+    <legend>Notebook</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Model): @Html.DisplayFor(model => model.Model)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Price): @Html.DisplayFor(model => model.Price)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.RAM): @Html.DisplayFor(model => model.RAM)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.HDD): @Html.DisplayFor(model => model.HDD)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Monitor): @Html.DisplayFor(model => model.Monitor)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <button type="button" onclick="location.href='@Url.Action("Index", "Notebook")'">Отменить</button>
+        <input type="submit" value="Удалить" />
+    </p>
+}

@@ -1,0 +1,94 @@
+﻿@model NotebookWebApp.Models.Notebook
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+<form id="form1" method="post" action="Create" enctype="application/x-www-form-urlencoded">
+    <fieldset>
+        <legend>Notebook</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Model)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Model)
+            @Html.ValidationMessageFor(model => model.Model)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Price)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Price)
+            @Html.ValidationMessageFor(model => model.Price)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RAM)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RAM)
+            @Html.ValidationMessageFor(model => model.RAM)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.HDD)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.HDD)
+            @Html.ValidationMessageFor(model => model.HDD)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Monitor)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Monitor)
+            @Html.ValidationMessageFor(model => model.Monitor)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Manufacturer)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Manufacturer)
+            @Html.ValidationMessageFor(model => model.Manufacturer)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Processor)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Processor)
+            @Html.ValidationMessageFor(model => model.Processor)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.User)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.User)
+            @Html.ValidationMessageFor(model => model.User)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Email)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Email)
+            @Html.ValidationMessageFor(model => model.Email)
+        </div>
+
+        <p>
+            <input type="submit" value="Create"/>
+        </p>
+    </fieldset>
+</form>
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
